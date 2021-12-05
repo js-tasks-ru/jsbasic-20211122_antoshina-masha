@@ -1,3 +1,8 @@
 function isEmpty(obj) {
-  // ваш код...
+  for (const k in obj){
+    if(obj[k] == undefined || obj[k]){
+      return false;
+    }
+  }
+  return true;
 }
